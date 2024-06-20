@@ -22,7 +22,7 @@ int main(int argc, char **argv)
 
     // 解析通过命令行参数传递的ip和port
     char *ip = argv[1];
-    uint16_t port = atoi(argv[2]);
+    uint16_t port = atoi(argv[2]);  // 字符串转化成int
 
     signal(SIGINT, resetHandler);  // SIGINT 就是 ctrl+c产生的信号，然后调用resetHanler进行处理
 
