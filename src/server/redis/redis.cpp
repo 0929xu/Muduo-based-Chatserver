@@ -1,5 +1,5 @@
 /*
-    连接：connect ->  pub_context   sub_context  (connect放方法生成了两个context)
+    连接：connect ->  pub_context   sub_context  (connect方法生成了两个context)
     
     发布：publish id message => pub_context  (使用publish方法在pub_context上发布消息,即往id这个通道上发布message消息)
 
