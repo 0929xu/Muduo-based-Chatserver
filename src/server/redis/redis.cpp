@@ -57,7 +57,7 @@ bool Redis::connect()
     thread t([&]() {
         observer_channel_message();
     });
-    t.detach();
+    t.detach();    // 分离线程t，使其在后台运行
     cout << "connect redis-server success!" << endl;
 
     return true;
